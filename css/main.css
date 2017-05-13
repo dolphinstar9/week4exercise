@@ -1,0 +1,37 @@
+body {
+  text-align: center;
+}
+
+.box {
+  display: inline-block;
+  height: 200px;
+  width: 1000px;
+}
+
+.cyan {
+  background-color: cyan;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.purple {
+  background-color: purple;
+}
+
+@media (max-width: 600px) {
+  .orange, .pink {
+    display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+  .cyan .orange .pink .purple {
+    width: 100%;
+  }
+}
